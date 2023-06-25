@@ -1,0 +1,176 @@
+.navBarContainer {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  position: fixed;
+  width: 100%;
+}
+
+.logoContainerImage {
+  width: 4.8rem;
+  height: 4.8rem;
+  /* position: relative; */
+  margin-left: 5.5rem;
+  cursor: pointer;
+}
+
+.line {
+  border-bottom: 1px solid var(--border);
+  width: 45%;
+  position: absolute;
+  left: 16.7rem;
+  z-index: 1;
+}
+
+.menuIcon {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 5.5rem;
+  margin-top: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
+.desktopNavBar {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  /* border: 2px solid yellow; */
+  padding-left: 12.3rem;
+  padding-right: 16.8rem;
+  background-color: #ffffff04;
+  backdrop-filter: blur(10px);
+  position: relative;
+  height: 10rem;
+}
+
+.active {
+  border-bottom: 3px solid var(--white);
+}
+
+a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 3px solid transparent;
+  transition: 0.3s;
+  /* border: 2px solid green; */
+}
+.desktopNavBar a:hover {
+  border-bottom: 3px solid var(--border);
+  transition: 0.3s;
+}
+
+a span {
+  margin-right: 1.2rem;
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+}
+
+@media screen and (max-width: 650px) {
+  .desktopNavBar {
+    display: none !important;
+  }
+
+  .navBarContainer {
+    margin: 0rem;
+    align-items: unset;
+  }
+
+  .logoContainerImage {
+    margin-top: 4rem;
+    cursor: auto;
+  }
+
+  #navLink {
+    width: 100% !important;
+    /* border: 2px solid red; */
+    height: 7rem;
+  }
+
+  .menuIcon {
+    display: block;
+    cursor: auto;
+  }
+
+  .desktopNavBar a {
+    justify-content: flex-start;
+    padding-left: 4rem;
+  }
+
+  .desktopNavBar a:hover {
+    border-bottom: 3px solid transparent !important;
+    transition: 0.3s;
+    border-right: 3px solid var(--border);
+  }
+
+  .mobileNavBar {
+    display: flex !important;
+    height: 100vh !important;
+    position: fixed !important;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: 0rem !important;
+    width: 50rem;
+    padding-top: 20rem !important;
+  }
+  .active {
+    border-bottom: 3px solid transparent !important;
+    border-right: 3px solid var(--white) !important;
+  }
+}
+
+/* this css is line breaking system */
+@media only screen and (max-width: 1281px) {
+  .line {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 1157px) {
+  .line {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .line {
+    width: 35% !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .line {
+    width: 30% !important;
+  }
+}
+
+@media only screen and (max-width: 911px) {
+  .line {
+    width: 25% !important;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .line {
+    width: 20% !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .line {
+    display: none;
+  }
+}
+
+/* this is mobile nav bar system */

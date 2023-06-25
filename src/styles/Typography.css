@@ -1,0 +1,69 @@
+.heading1 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 15rem;
+  line-height: 17.2rem;
+  color: var(--white);
+}
+
+.heading2 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 10rem;
+  color: var(--white);
+}
+
+.heading3 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 5.6rem;
+  color: var(--white);
+}
+
+.heading4 {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: var(--white);
+  line-height: 3.7rem;
+}
+
+.heading5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: var(--primary);
+  letter-spacing: 4.75px;
+  line-height: 3.4rem;
+}
+
+.Subheading1 {
+  font-family: "Bellefair", serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.Subheading2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 2.35px;
+  color: var(--white);
+}
+
+.navText {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 2.7px;
+  color: var(--white);
+}
+
+.bodyText {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: var(--primary);
+}
