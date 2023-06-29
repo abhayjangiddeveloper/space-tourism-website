@@ -9,6 +9,7 @@
   --secondary: #0b0d17;
   --border: #979797;
   --black: #0b0d17;
+  --black-secondary: #383b4b;
 }
 
 @media (prefers-color-scheme: dark) {

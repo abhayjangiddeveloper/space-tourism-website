@@ -48,6 +48,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .homeContainer {
+    background-image: url("../../assets/images/homeBackgrounMobile.png");
+    background-position: center;
+    background-size: cover;
+  }
+
   .spaceContainer {
     /* max-width: 100% !important; */
     margin: 0;

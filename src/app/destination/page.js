@@ -1,8 +1,12 @@
 import React from "react";
-import RootLayout from "../layout";
+import Destination from "@/components/destination/Destination";
 
-const Destination = () => {
-  return <div>hello, destination</div>;
+const page = () => {
+  return (
+    <>
+      <Destination />
+    </>
+  );
 };
 
-export default Destination;
+export default page;

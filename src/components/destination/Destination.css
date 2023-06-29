@@ -1,0 +1,125 @@
+.destinationContainer {
+  height: 160rem;
+  background-image: url("../../assets/images/destination1@2x.png");
+  background-position: center;
+  background-size: cover;
+}
+.destinationHeader {
+  padding-top: 21.2rem;
+  padding-left: 16.6rem;
+}
+
+.right {
+  max-width: 60rem;
+  height: 50rem;
+}
+
+.right > h2 {
+  margin-bottom: 2rem;
+}
+
+.right > p {
+  margin-bottom: 6rem;
+}
+
+.destinationNavBar ul {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  margin-bottom: 3.7rem;
+  /* border: 2px solid yellow; */
+}
+
+.destinationNavBar ul li {
+  list-style: none;
+  color: var(--primary);
+  text-align: center;
+  padding-bottom: 1.2rem;
+  cursor: pointer;
+  height: 4rem;
+  user-select: none;
+}
+
+.destinationNavBar ul li:hover {
+  border-bottom: 3px solid var(--border);
+}
+
+.destinationActive {
+  border-bottom: 3px solid var(--white) !important;
+  color: var(--white) !important;
+}
+
+.renderDestinationContentContainer {
+  margin-top: 6.5rem;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 16.3rem;
+  padding-left: 23.2rem;
+  gap: 15.7rem;
+  /* border: 2px solid green; */
+}
+
+.destinationImage {
+  width: 44.5rem;
+  height: 44.5rem;
+}
+
+.distance > p {
+  user-select: none;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.distance > h5 {
+  text-transform: uppercase;
+}
+
+.time > h5 {
+  text-transform: uppercase;
+}
+
+.time > p {
+  user-select: none;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.distanceAndTime {
+  border-top: 1px solid var(--black-secondary);
+  display: flex;
+  padding-top: 2.8rem;
+  gap: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .renderDestinationContentContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+  }
+
+  .right {
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 0rem 2.4rem;
+  }
+
+  .destinationNavBar ul {
+    justify-content: center;
+  }
+  .distanceAndTime {
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .distanceAndTime {
+    flex-direction: column;
+  }
+  .destinationHeader {
+    padding-left: 0rem;
+  }
+}
