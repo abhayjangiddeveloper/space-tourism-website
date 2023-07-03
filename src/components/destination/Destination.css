@@ -1,5 +1,5 @@
 .destinationContainer {
-  height: 160rem;
+  height: 100vh;
   background-image: url("../../assets/images/destination1@2x.png");
   background-position: center;
   background-size: cover;
@@ -94,6 +94,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .destinationContainer {
+    height: 160rem;
+  }
   .renderDestinationContentContainer {
     flex-direction: column;
     align-items: center;

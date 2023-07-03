@@ -1,0 +1,141 @@
+.crewContainer {
+  height: 100vh;
+  background-image: url("../../assets//images/crewBackground.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.crewHeader {
+  padding-left: 16.6rem;
+  padding-top: 21.2rem;
+}
+
+.crewSlider {
+  display: flex;
+  align-items: center;
+  padding-left: 16.6rem;
+  padding-right: 13.7rem;
+  justify-content: space-between;
+}
+
+/*  */
+
+.crewTop > h3 {
+  text-transform: uppercase;
+  opacity: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.crewTop > h1 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  animation: fade 3s ease;
+}
+.crewTop > p {
+  width: 44.4rem;
+  margin-bottom: 12.5rem;
+  height: calc(27rem - 12.5rem);
+}
+
+.crewImage {
+  width: 56rem;
+  height: 60rem;
+}
+
+.crewList {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.crewList > li {
+  list-style: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--white-secondary);
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.crewList > .crewActive {
+  background-color: var(--white);
+}
+
+.crewList > li:hover {
+  background-color: var(--white);
+  opacity: 50%;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .crewLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .crewTop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .crewContainer {
+    height: 129rem;
+  }
+  .crewSlider {
+    flex-direction: column;
+  }
+  .crewList {
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .crewLeft {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .crewTop > p {
+    margin-bottom: 4.4rem;
+    text-align: center;
+  }
+  .crewHeader {
+    padding-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .crewLeft {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+  }
+
+  .crewContainer {
+    height: 100vh !important;
+  }
+  .crewImage {
+    width: 25rem !important;
+    height: 30rem !important;
+  }
+  .crewContainer {
+    height: 150rem;
+  }
+  .crewRight {
+    border-bottom: 2px solid var(--black-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3.2rem;
+  }
+  .crewSlider {
+    flex-direction: column-reverse;
+  }
+  .crewImage {
+    width: 17.7rem;
+    height: 22.2rem;
+  }
+}

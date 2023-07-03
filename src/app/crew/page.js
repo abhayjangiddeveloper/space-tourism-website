@@ -1,8 +1,9 @@
 import React from "react";
 import RootLayout from "../layout";
+import Crew from "@/components/crew/Crew";
 
-const Crew = () => {
-  return <div>hello, crew</div>;
+const Page = () => {
+  return <Crew />;
 };
 
-export default Crew;
+export default Page;
